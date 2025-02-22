@@ -16,9 +16,9 @@ const router = useRouter();
 
   const handleBackClick = () => router.back();
 
-    return ( <div className="relative w-full h-[300px]">
-
-<Button
+    return ( 
+    <div className="relative w-full h-[300px]">
+      <Button
         variant={"secondary"}
         className="absolute left-4 top-4 z-50 rounded-full"
         size={"icon"}
@@ -33,10 +33,9 @@ const router = useRouter();
         size={"icon"}
       >
         <ScrollTextIcon />
-      </Button>
-
-            
-        </div> );
+      </Button>        
+    </div> 
+    );
 }
  
 export default ProductHeader;
