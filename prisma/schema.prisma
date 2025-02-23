@@ -63,6 +63,8 @@ model Order {
   orderProducts     OrderProduct[]
   createdAt         DateTime          @default(now())
   updatedAt         DateTime          @updatedAt
+  consumerName      String
+  consumerCpf       String
 }
 
 model OrderProduct {
