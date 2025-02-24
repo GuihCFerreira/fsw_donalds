@@ -13,6 +13,9 @@ export const getOrdersByCpf = async (cpf: string) => {
 
 export const getOrdersByCpfWithRestaurantAndProducts = async (cpf: string) => {
     const orders = await db.order.findMany({
+        orderBy: {
+            createdAt: 'desc'
+        },
         where: {
             customerCpf: removeCpfPunctuation(cpf)
         },
